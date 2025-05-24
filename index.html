@@ -16,7 +16,7 @@
     <div class="particles">
         <script>
             const container = document.querySelector('.particles');
-            for (let i = 0; i < 200; i++) {
+            for (let i = 0; i < 100; i++) {
                 container.innerHTML += '<div class="particle"></div>';
             }
         </script>
@@ -38,14 +38,13 @@
         <div class="nav-container">
             <button class="nav-link" onclick="scrollToSection('home')">Home</button>
             <button class="nav-link" onclick="scrollToSection('about')">About</button>
-            <button class="nav-link" onclick="scrollToSection('skills')">Skills</button>
-            <button class="nav-link" onclick="scrollToSection('projects')">Projects</button>
+            <button class="nav-link" onclick="scrollToSection('projects')">Portfolio</button>
             <button class="nav-link" onclick="scrollToSection('contact')">Contact</button>
         </div>
     </nav>
 
     <!-- Resume Button -->
-    <a href="https://drive.google.com/file/d/1xGbkJ3_msejKZ-1i8KXquMPOyP0SoJsL/view?usp=sharing" target="_blank" class="resume-btn">
+    <a href="https://drive.google.com/file/d/1xGbkJ3_msejKZ-1i8KXquMPOyP0SoJsL/view?usp=sharing" target="_blank" rel="noopener" class="resume-btn">
         <i class="fas fa-file-alt mr-2"></i>Resume
     </a>
 
@@ -90,136 +89,24 @@
 
         <!-- Update all sections to use centered container -->
         <main class="w-full">
-            <!-- Skills Section -->
-            <section id="skills" class="py-16 bg-gray-100 dark:bg-gray-800 transition-colors duration-300 w-full">
-                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12" data-aos="fade-up">Technical Skills</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div data-aos="fade-right" data-aos-delay="100">
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-700 dark:text-gray-300 font-medium">JavaScript</span>
-                                <span class="text-gray-700 dark:text-gray-300 font-medium">90%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill bg-blue-500 dark:bg-blue-600" style="width: 0%;" data-width="90%"></div>
-                            </div>
-                        </div>
-                        <div data-aos="fade-left" data-aos-delay="200">
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-700 dark:text-gray-300 font-medium">Python</span>
-                                <span class="text-gray-700 dark:text-gray-300 font-medium">85%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill bg-blue-500 dark:bg-blue-600" style="width: 0%;" data-width="85%"></div>
-                            </div>
-                        </div>
-                        <div data-aos="fade-right" data-aos-delay="300">
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-700 dark:text-gray-300 font-medium">React</span>
-                                <span class="text-gray-700 dark:text-gray-300 font-medium">80%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill bg-blue-500 dark:bg-blue-600" style="width: 0%;" data-width="80%"></div>
-                            </div>
-                        </div>
-                        <div data-aos="fade-left" data-aos-delay="400">
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-700 dark:text-gray-300 font-medium">Node.js</span>
-                                <span class="text-gray-700 dark:text-gray-300 font-medium">75%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill bg-blue-500 dark:bg-blue-600" style="width: 0%;" data-width="75%"></div>
-                            </div>
-                        </div>
-                        <div data-aos="fade-right" data-aos-delay="500">
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-700 dark:text-gray-300 font-medium">MongoDB</span>
-                                <span class="text-gray-700 dark:text-gray-300 font-medium">70%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill bg-blue-500 dark:bg-blue-600" style="width: 0%;" data-width="70%"></div>
-                            </div>
-                        </div>
-                        <div data-aos="fade-left" data-aos-delay="600">
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-700 dark:text-gray-300 font-medium">Flask</span>
-                                <span class="text-gray-700 dark:text-gray-300 font-medium">65%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill bg-blue-500 dark:bg-blue-600" style="width: 0%;" data-width="65%"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-16">
-                        <h3 class="text-2xl font-bold text-center text-gray-900 dark:text-white mb-8" data-aos="fade-up">Other Skills</h3>
-                        <div class="flex flex-wrap justify-center gap-4">
-                            <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md flex items-center card-3d" data-aos="zoom-in" data-aos-delay="100">
-                                <i class="fab fa-html5 text-2xl text-orange-500 mr-3"></i>
-                                <span class="text-gray-700 dark:text-gray-200">HTML5</span>
-                            </div>
-                            <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md flex items-center card-3d" data-aos="zoom-in" data-aos-delay="200">
-                                <i class="fab fa-css3-alt text-2xl text-blue-500 mr-3"></i>
-                                <span class="text-gray-700 dark:text-gray-200">CSS3</span>
-                            </div>
-                            <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md flex items-center card-3d" data-aos="zoom-in" data-aos-delay="300">
-                                <i class="fab fa-git-alt text-2xl text-red-500 mr-3"></i>
-                                <span class="text-gray-700 dark:text-gray-200">Git</span>
-                            </div>
-                            <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md flex items-center card-3d" data-aos="zoom-in" data-aos-delay="400">
-                                <i class="fab fa-aws text-2xl text-yellow-500 mr-3"></i>
-                                <span class="text-gray-700 dark:text-gray-200">AWS</span>
-                            </div>
-                            <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md flex items-center card-3d" data-aos="zoom-in" data-aos-delay="500">
-                                <i class="fas fa-database text-2xl text-green-500 mr-3"></i>
-                                <span class="text-gray-700 dark:text-gray-200">SQL</span>
-                            </div>
-                            <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md flex items-center card-3d" data-aos="zoom-in" data-aos-delay="600">
-                                <i class="fab fa-docker text-2xl text-blue-400 mr-3"></i>
-                                <span class="text-gray-700 dark:text-gray-200">Docker</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <!-- Projects Section -->
             <section id="projects" class="py-16 bg-white dark:bg-gray-900 transition-colors duration-300 w-full">
                 <div class="container text-center">
-                    <h2 class="text-4xl font-bold text-white mb-12" data-aos="fade-up">Featured Projects</h2>
                     
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <!-- Projects will be dynamically populated -->
-                        <div class="project-card">
-                            <h3 class="text-xl font-bold mb-2">AI Data Driven Student Mentoring System</h3>
-                            <p class="text-gray-300 mb-4">Built an AI-driven student mentoring system that automates paperwork. Reduced manual paperwork by 90% and improved student engagement tracking.</p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">MongoDB</span>
-                                <span class="tech-tag">Node.js</span>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <h3 class="text-xl font-bold mb-2">AI-Powered Personalized Email Generator</h3>
-                            <p class="text-gray-300 mb-4">Built an AI-driven tool that generates personalized emails instantly. Automated email drafting, reducing effort while ensuring contextual accuracy.</p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Fast API</span>
-                                <span class="tech-tag">Firebase</span>
-                                <span class="tech-tag">SendGrid</span>
-                                <span class="tech-tag">Google AI Studio</span>
-                            </div>
-                        </div>
+                    <!-- Project filters -->
+                    <div class="flex justify-center gap-4 mb-8">
+                        <button class="project-filter active" data-filter="projects">Projects</button>
+                        <button class="project-filter" data-filter="certifications">Certifications</button>
+                        <button class="project-filter" data-filter="tools">Tools & Tech</button>
                     </div>
 
-                    <!-- Project filters -->
-                    <div class="flex justify-center gap-4 mb-8 mt-4">
-                        <button class="project-filter active" data-filter="all">All</button>
-                        <button class="project-filter" data-filter="web">Web</button>
-                        <button class="project-filter" data-filter="mobile">Mobile</button>
-                        <button class="project-filter" data-filter="ai">AI/ML</button>
+                    <!-- Projects grid container -->
+                    <div class="projects-grid">
+                        <!-- Projects will be dynamically populated here -->
                     </div>
+
+                    <!-- Show more button -->
+                    <button class="show-more-btn">Show More</button>
                 </div>
             </section>
 
@@ -255,7 +142,7 @@
         </footer>
 
         <!-- Back to Top Button -->
-        <button id="backToTop" class="fixed bottom-8 right-8">
+        <button id="backToTop" class="fixed bottom-8 right-8" aria-label="Back to Top" title="Back to Top">
             <i class="fas fa-arrow-up"></i>
         </button>
         
