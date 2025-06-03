@@ -1,3 +1,3 @@
 # portfolio
 
-https://portfolio-snowy-one-57.vercel.app/
+https://tinyurl.com/portfolio-sai
